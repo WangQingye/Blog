@@ -1,106 +1,79 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
   
-  <title>我的JS学习笔记12月22日 | 清野流云</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我的JS学习笔记12月22日1.函数相关
+  <title>我的JS学习笔记12月22日</title>
+  <meta name="author" content="王清野">
+   <meta name="description" content="我的JS学习笔记12月22日1.函数相关
 多个脚本或函数在调用时一定要通过依赖关系注意引入的顺序。
 作用域：即函数或变量的有效范围。限定了那部分代码可以访问该变量或方法。
 一般来说稍微避免全局变量和函数的创建，因为其很容易被改变，可以通过一些方法来减少这种风险，比如闭包。
-函数内变量的生存期是仅在函数运行期间，运行结束后就将被JS的垃圾回收机制回收。全局变量的生存期就是页面的生存期。
-标识符：即变">
-<meta property="og:type" content="article">
-<meta property="og:title" content="我的JS学习笔记12月22日">
-<meta property="og:url" content="http://wangqingye.com/Blog/2017/02/27/JS学习笔记12-22/index.html">
-<meta property="og:site_name" content="清野流云">
-<meta property="og:description" content="我的JS学习笔记12月22日1.函数相关
-多个脚本或函数在调用时一定要通过依赖关系注意引入的顺序。
-作用域：即函数或变量的有效范围。限定了那部分代码可以访问该变量或方法。
-一般来说稍微避免全局变量和函数的创建，因为其很容易被改变，可以通过一些方法来减少这种风险，比如闭包。
-函数内变量的生存期是仅在函数运行期间，运行结束后就将被JS的垃圾回收机制回收。全局变量的生存期就是页面的生存期。
-标识符：即变">
-<meta property="og:updated_time" content="2017-04-09T10:43:32.995Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的JS学习笔记12月22日">
-<meta name="twitter:description" content="我的JS学习笔记12月22日1.函数相关
-多个脚本或函数在调用时一定要通过依赖关系注意引入的顺序。
-作用域：即函数或变量的有效范围。限定了那部分代码可以访问该变量或方法。
-一般来说稍微避免全局变量和函数的创建，因为其很容易被改变，可以通过一些方法来减少这种风险，比如闭包。
-函数内变量的生存期是仅在函数运行期间，运行结束后就将被JS的垃圾回收机制回收。全局变量的生存期就是页面的生存期。
-标识符：即变">
-  
-    <link rel="alternate" href="/atom.xml" title="清野流云" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/Blog/css/style.css">
+函数内变量的生存期是仅在函">
   
 
+  <meta property="og:title" content="我的JS学习笔记12月22日"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="清野流云"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/Blog/atom.xml" title="清野流云" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/Blog/favicon.ico">
 </head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/Blog/" id="logo">清野流云</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/Blog/">Home</a>
-        
-          <a class="main-nav-link" href="/Blog/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://wangqingye.com/Blog"></form>
+  <a id="top"></a>
+  <div id='wx_pic' style='display:none;'><img src='/wx_share.png'/></div>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;
       </div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-JS学习笔记12-22" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Blog/2017/02/27/JS学习笔记12-22/" class="article-date">
-  <time datetime="2017-02-27T14:27:33.102Z" itemprop="datePublished">2017-02-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
   
-    <h1 class="article-title" itemprop="name">
-      我的JS学习笔记12月22日
+    <h1 class="page-title center">
+        我的JS学习笔记12月22日
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+
+    </div>
+    <div class="meta center">
       
-        <h1 id="我的JS学习笔记12月22日"><a href="#我的JS学习笔记12月22日" class="headerlink" title="我的JS学习笔记12月22日"></a>我的JS学习笔记12月22日</h1><h2 id="1-函数相关"><a href="#1-函数相关" class="headerlink" title="1.函数相关"></a>1.函数相关</h2><ul>
+<time datetime="2017-02-27T14:27:33.102Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  2017-02-27
+</time>
+
+
+
+
+
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <h1 id="我的JS学习笔记12月22日"><a href="#我的JS学习笔记12月22日" class="headerlink" title="我的JS学习笔记12月22日"></a>我的JS学习笔记12月22日</h1><h2 id="1-函数相关"><a href="#1-函数相关" class="headerlink" title="1.函数相关"></a>1.函数相关</h2><ul>
 <li>多个脚本或函数在调用时一定要通过依赖关系注意引入的顺序。</li>
 <li><strong>作用域</strong>：即函数或变量的有效范围。限定了那部分代码可以访问该变量或方法。</li>
 <li>一般来说稍微避免全局变量和函数的创建，因为其很容易被改变，可以通过一些方法来减少这种风险，比如闭包。</li>
@@ -190,101 +163,61 @@ Date.setDate(a + 28); //也可以减28,获得28天前的日期
 <pre><code>Person.prototype.getName = function(){ return this.firstName }
 </code></pre><p>in和hasOwnProperty的区别是，in是只要实例上有就会返回true,而后者则必须是存在于实例上的，继承的不算。通过delete可以删除实例上的属性，还原回原型属性。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://wangqingye.com/Blog/Blog/2017/02/27/JS学习笔记12-22/" data-id="cj1akbdqx0000ycwtsvf3jio8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/Blog/2017/02/16/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
 
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Blog/archives/2017/02/">February 2017</a></li></ul>
-    </div>
+  </article>
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
   </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/Blog/2017/02/27/JS学习笔记12-22/">我的JS学习笔记12月22日</a>
-          </li>
-        
-          <li>
-            <a href="/Blog/2017/02/16/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 王清野<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+
     </div>
   </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" target="_self">
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        © XXX 20xx-2017
+    </div>
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/Blog/" class="mobile-nav-link">Home</a>
-  
-    <a href="/Blog/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+// disqus scripts
 
 
-  <link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.css">
-  <script src="/Blog/fancybox/jquery.fancybox.pack.js"></script>
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
 
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
 
-<script src="/Blog/js/script.js"></script>
+</script>
 
-  </div>
 </body>
 </html>
