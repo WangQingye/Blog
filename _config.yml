@@ -80,5 +80,7 @@ theme: anatole
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: gh-pages
-  type:
+deploy:
+  type: git
+  repo: git@github.com:WangQingye/Blog.git
+  branch: gh-pages
